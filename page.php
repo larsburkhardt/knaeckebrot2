@@ -10,6 +10,14 @@
             <article <?php post_class(); ?>>
 
                 <h1><?php the_title(); ?></h1>
+
+                <?php if(get_the_post_thumbnail() !== '') : ?>
+                <div>
+                    <?php the_post_thumbnail('full', ['class' => 'post__thumbnail']); ?>
+                </div>
+                <?php endif; ?>
+
+
                 <div><?php the_content(); ?></div>
                 
             </article>

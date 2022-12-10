@@ -7,15 +7,23 @@
 
 <main>
     <div class="container">
-        <?php while(have_posts()) : the_post(); ?>
+        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <article <?php post_class(); ?>>
 
                 <h1><?php the_title(); ?></h1>
+
+                <?php if(get_the_post_thumbnail() !== '') : ?>
+                <div>
+                    <?php the_post_thumbnail('full', ['class' => 'post__thumbnail']); ?>
+                </div>
+                <?php endif; ?>
+
+
                 <div><?php the_content(); ?></div>
                 
             </article>
 
-        <?php endwhile; ?>
+        <?php endwhile;endif; ?>
 
         <?php if($sidebar_main) : ?>
             <?php get_sidebar('sidebar-1'); ?>
