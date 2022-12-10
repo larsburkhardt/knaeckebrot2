@@ -7,6 +7,7 @@
 
 <main>
     <div class="container">
+        <div id="content" class="<?php echo $sidebar_main === true ? 'sidebar-active' : '';?>">
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <article <?php post_class(); ?>>
                 <h1><?php the_title(); ?></h1>
@@ -21,7 +22,7 @@
             </article>
 
         <?php endwhile; endif; ?>
-
+        </div>
         <?php if($sidebar_main) : ?>
             <?php get_sidebar('sidebar-1'); ?>
         <?php endif; ?>
