@@ -1,4 +1,4 @@
-# Knaeckebrot 2 - Basic Theme for Wordpress
+# Knaeckebrot 2 - Classic Basic Theme for Wordpress
 
 ## Instructions
 Move the folder "knaeckebrot2" to your theme folder in your Wordpress installation ("wp-content/themes/").
@@ -6,11 +6,15 @@ Theme should now appear in the theme section of Wordpress. Activate it.
 
 ## Features
 
-* Grid (Flexbox) by [flexboxgrid.com](http://www.flexboxgrid.com)
-* Mobile-first
 * Responsive Navigation with Toggle Button
 * 2 Menu positions (header, footer)
-* 2 Content widgets (if you don't need them, delete them in index.php at line 25 and remove the code in functions.php from line 50 to 70)
+
+## Notice
+
+This is the theme version with plain CSS/JS. If you want a version with SCSS and JS compiler (Nodejs and Gulp required),
+you can find the version *knaeckebrot1* here:  [http://knaeckebrot1.larsburkhardt.de](http://knaeckebrot1.larsburkhardt.de)
+
 
 ## Preview
 Preview of the theme at [http://knaeckebrot2.larsburkhardt.de](http://knaeckebrot2.larsburkhardt.de)
+
