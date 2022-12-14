@@ -11,6 +11,7 @@
             <article <?php post_class(); ?>>
 
                 <h1><?php the_title(); ?></h1>
+				<div></div>
 
                 <?php if(get_the_post_thumbnail() !== '') : ?>
                 <div>
